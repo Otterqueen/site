@@ -1,0 +1,29 @@
+.projet_contain{
+    //width: 50%;
+    color: antiquewhite;
+    background: #2f144085;
+    padding: 20px;
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.titre{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.details{
+    color: black;
+}
+
+#note{
+    border: solid 1px green;
+    padding: 5px;
+    background: green;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+}

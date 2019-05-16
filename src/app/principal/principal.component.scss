@@ -1,0 +1,68 @@
+.principal{
+    height: 100%;
+    //background-color: #6498877d;
+    background-color: #7b64987d;
+    text-align: center;
+    border-top: solid 10px white;
+}
+
+.about_me{
+    text-align: left;
+    background-image: url('../../assets/back3.jpg');
+    background-size: cover;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.titre{
+    text-decoration: underline;
+}
+#photo
+{
+    border-radius: 80px;
+}
+.about_me .logo{
+    height: 8vh;
+    width: 8vh;
+    padding: 5px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.about_me .logo:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+  }
+
+#desciption{
+    background-color: #ffffff63;;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.boutons{
+    margin-top: 10px;
+    padding: 20px;
+    background-image: url('../../assets/back5.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bouton{
+    padding: 10px;
+    margin-bottom: 14px;
+    border: solid #584e5a 5px;
+    background-color: #603b93;
+    font-size: x-large;
+    font-weight: bold;
+    color: antiquewhite;
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-property: border, background-color;
+}
+
+.bouton:hover{
+    border: solid #9e95a0 5px;
+    background-color: #603b934d;
+}

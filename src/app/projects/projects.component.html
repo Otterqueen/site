@@ -1,0 +1,37 @@
+<div class="contain">
+    <h1 class="titre"> Mes projets </h1>  
+    <mat-tab-group>
+        <mat-tab label="Projets">
+            <projet-details *ngFor="let projet of projets"
+                [type]="projet.type"
+                [src]="projet.src"
+                [titre]="projet.titre"
+                [annee]="projet.annee"
+                [lang]=projet.lang
+                [contexte]=projet.contexte
+                [decription]=projet.decription
+                [temps]=projet.temps>
+            </projet-details>
+        </mat-tab>
+        <mat-tab label="Le-101">
+            <projet-ecole *ngFor="let projet of projets_ecole"
+            [duree]="projet.duree"
+            [titre]="projet.titre"
+            [note]="projet.note"
+            [decription]="projet.decription"
+            [lang]="projet.lang">
+        </projet-ecole>
+        </mat-tab>
+    </mat-tab-group>
+    
+    <!-- <projet-details *ngFor="let projet of projets"
+        [type]="projet.type"
+        [src]="projet.src"
+        [titre]="projet.titre"
+        [annee]="projet.annee"
+        [lang]=projet.lang
+        [contexte]=projet.contexte
+        [decription]=projet.decription
+        [temps]=projet.temps>
+    </projet-details> -->
+</div>

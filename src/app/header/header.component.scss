@@ -1,0 +1,39 @@
+.header_title {
+    text-align: center;
+    font-size: 5vh;
+    //color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+
+#header{
+    background-color: #ffffff;
+    background-image: url('../../assets/back2.jpg');
+    background-position: inherit;
+    background-size: cover;
+  }
+nav {
+  text-align: left;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #ffffff;
+  border-left: solid transparent 1px;
+  border-right: solid transparent 1px;
+}
+
+nav a:hover {
+
+  background-color: #f4e5ff7a;
+  color: #000000;
+  border-left: solid black 1px;
+  border-right: solid black 1px; 
+}
+
+nav a.active {
+  background-color: #8907b178;
+}

@@ -1,0 +1,10 @@
+<div class="projet_contain col-lg-6 col-md-6 col-sm-12">
+  <h2 class="titre">{{titre}}</h2>
+  <p> Année de conception : <span class="details">{{annee}}</span></p>
+  <p>Languages/compétences : <span class="details">{{lang}}</span></p>
+  <p *ngIf="temps">temps de jeu approximatif : <span class="details">{{temps}} min</span></p>
+  <p>Contexte : <span class="details">{{contexte}}</span></p>
+  <iframe *ngIf="test_type()" class="video" [src]='photoURL()' width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  <gallery-project *ngIf="!test_type()" [src]="src"></gallery-project>
+  <p>En savoir plus : <span class="details">{{decription}}</span></p>
+</div>

@@ -1,0 +1,61 @@
+.titre{
+    text-align: center;
+    //color: white;
+    text-decoration: underline;
+
+}
+.contain{
+    margin-top: 10px;
+    background: grey;
+    //background-image: url('../../assets/back7.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    padding: 20px;
+}
+.titre2{
+    text-align: center;
+    border-bottom: solid 2px;
+    border-bottom-left-radius: 20px;
+    margin: 0;
+}
+
+.time{
+    //background-color: blanchedalmond;
+    border-left: solid 7px black;
+    padding: 0;
+}
+
+.annee{
+    border-top: solid 2px;
+    border-top-left-radius: 20px;
+}
+
+.detail{
+    padding-left: 15px;
+    text-align: justify;
+    padding-right: 15px;
+}
+
+.decription{
+    padding-bottom: 10px;
+}
+
+._tri {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.sco{
+    background-color: rgba(240, 248, 255, 0.507);
+}
+.exp{
+    background-color:rgba(228, 187, 255, 0.507);
+}
+.perso{
+    background-color:rgba(218, 255, 187, 0.507);
+}
