@@ -66,3 +66,15 @@
     border: solid #9e95a0 5px;
     background-color: #603b934d;
 }
+
+.gallery{
+    background-image: url('../../assets/back8.jpg');
+    height: 500px;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery h2 {
+    background: #faebd780;
+}
