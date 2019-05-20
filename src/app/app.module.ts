@@ -15,6 +15,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { ProjetEcoleComponent } from './projet-ecole/projet-ecole.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     ContactComponent,
     ProjetDetailsComponent,
     GalleryProjectComponent,
-    ProjetEcoleComponent
+    ProjetEcoleComponent,
+    AboutMeComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

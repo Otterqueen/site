@@ -5,6 +5,7 @@ import{ProjectsComponent} from './projects/projects.component'
 import{ParcoursComponent} from './parcours/parcours.component'
 import{ContactComponent}  from './contact/contact.component'
 import{PrincipalComponent}  from './principal/principal.component'
+import{AboutMeComponent}  from './about-me/about-me.component'
 
 const routes: Routes = [
   {
@@ -29,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: 'about_me',
-    component: ContactComponent
+    component: AboutMeComponent
   },
 ];
 
