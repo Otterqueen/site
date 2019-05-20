@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'gallery',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  @Input() src_list : Array<any>;
+
   constructor() { }
 
   ngOnInit() {
+    console.log("list = ", this.src_list);
   }
 
 }

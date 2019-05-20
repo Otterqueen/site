@@ -1,3 +1,5 @@
-<p>
-  gallery works!
-</p>
+<div class="contain">
+  <div *ngFor="let img of src_list" class="image" [style.background-image]="img.src">
+      <!-- <img  [src]="img.src" [alt]="img.alt"> -->
+  </div>
+</div>
