@@ -74,7 +74,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       type       : 'imqge',
-      src        : '../../assets/robot',
+      src        : '/assets/robot',
       titre      : 'Framboisette, le robot Raspberry pi',
       annee      : '2015',
       lang       : 'Python, linux',
