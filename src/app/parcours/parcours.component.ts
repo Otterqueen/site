@@ -111,21 +111,6 @@ export class ParcoursComponent implements OnInit {
     let persos = document.getElementsByClassName("perso") as HTMLCollectionOf<HTMLElement>;
     let exps = document.getElementsByClassName("exp") as HTMLCollectionOf<HTMLElement>;
     switch (item.value) {
-      case 'sco':
-        for(var i=0; i< scos.length; i++)
-        {
-          scos[i].style.display = "block";
-        }
-        for(var j=0; j< persos.length; j++)
-        {
-          persos[j].style.display = "none";
-        }
-        for(var k=0; k< exps.length; k++)
-        {
-          exps[k].style.display = "none";
-        }
-        console.log("case sco \n scos = ", scos[i]);
-        break;
       case 'exp':
         for(var i=0; i< scos.length; i++)
         {
@@ -140,6 +125,21 @@ export class ParcoursComponent implements OnInit {
           exps[k].style.display = "block";
         }
         console.log("case exp ");
+        break;
+      case 'sco':
+        for(var i=0; i< scos.length; i++)
+        {
+          scos[i].style.display = "block";
+        }
+        for(var j=0; j< persos.length; j++)
+        {
+          persos[j].style.display = "none";
+        }
+        for(var k=0; k< exps.length; k++)
+        {
+          exps[k].style.display = "none";
+        }
+        //console.log("case sco \n scos = ", scos);
         break;
       case 'perso':
         for(var i=0; i< scos.length; i++)

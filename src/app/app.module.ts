@@ -17,6 +17,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MatTabsModule,
     BrowserAnimationsModule,
     MatRadioModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
