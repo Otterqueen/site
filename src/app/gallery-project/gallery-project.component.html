@@ -1,5 +1,6 @@
 <div class="contain">
-    <img id="image" [src]="image" class="col-lg-8 col-md-8 col-sm-12">
+    <!-- <img id="image" [src]="image" class="col-lg-8 col-md-8 col-sm-12"> -->
+    <img id="image" [src]="image">
     <mat-button-toggle-group #group="matButtonToggleGroup">
         <mat-button-toggle *ngFor="let avatar of avatars" (change)="selectionChanged($event)" [value]="avatar.src"
                            class="col-lg-2">
