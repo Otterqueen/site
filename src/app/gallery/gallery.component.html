@@ -1,6 +1,6 @@
 <div class="contain">
-  <div *ngFor="let img of src_list" class="image" [style.background-image]="img.src">
-    <a (click)="show_viewer(img.src)"><div class="img2" [style.background-image]="img.src"></div></a>
+  <div *ngFor="let img of src_list" class="image">
+    <a (click)="show_viewer(img.src)"><div class="img2" [style.background-image]="img.mini_src"></div></a>
   </div>
 </div>
 <canvas (click)="hide_viewer()" id="canvas" class="canvas"></canvas>
