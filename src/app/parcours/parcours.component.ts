@@ -102,8 +102,26 @@ export class ParcoursComponent implements OnInit {
   ];
 
   mini_list = [
-    {src: this.sanitization.bypassSecurityTrustStyle(`url('assets/photos/18.jpg')`)},
-    {src: this.sanitization.bypassSecurityTrustStyle(`url('assets/photos/19.jpg')`)}
+
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/CSS3.png'), name: 'Web CSS3'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/PHP-Logo.png'), name: 'Web PHP'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/angular.png'), name: 'Web angular'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/nodejs.png'), name: 'Web NodeJS'},
+
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/mongo.png'), name: 'BDD MongoDB'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/mysql.png'), name: 'BDD My sql'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/postgresql-logo.png'), name: 'BDD postgreSql'},
+
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Java_Logo.png'), name: 'Lang. JAVA'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/JavaScript-logo.png'), name: 'Lang. JavaScript'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/python.png'), name: 'Lang. Python'},
+
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Logo_Unity.png '), name: 'Moteur Unity3D'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Visual_Studio.png'), name: 'IDE. Visual Studio'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/photoshop.png'), name: 'Log. Photoshop'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Raspberry.png'), name: 'Tech. Raspberry'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/linux.png'), name: 'Tech. Linux'},
+
   ]
 
   constructor(private sanitization: DomSanitizer) { }
