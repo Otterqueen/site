@@ -18,6 +18,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     BrowserAnimationsModule,
     MatRadioModule,
     MatButtonToggleModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

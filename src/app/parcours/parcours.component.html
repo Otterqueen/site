@@ -1,6 +1,6 @@
-<mat-accordion [displayMode]='flat' >
+<!-- <mat-accordion [displayMode]='flat' >
 
-  <!-- <mat-expansion-panel class="contain" [expanded]="true"> -->
+  <mat-expansion-panel class="contain" [expanded]="true">
   <mat-expansion-panel class="contain">
     <mat-expansion-panel-header>
     <mat-panel-description>
@@ -34,9 +34,50 @@
   
       <div class="contain">
         <h1 class="titre">Mon CV</h1>
-        
-      </div>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        <h2>Domaines de Compétences : </h2>
+        <ul>
+          <li>Informatique :
+              <ul>
+                  <li>Langages de programmation : </li>  Python, Java, C/C++, JS, PHP SQL, NodeJS-Angular, ...
+                  <div><img *ngFor="let img of mini_list" class="mini" src="../../assets/back2.jpg" /> </div>
+                  <li>Manipulation de logiciel de retouche/création d'image (Photoshop, ...)</li>
+                  <li>Maîtrise de logiciel de création d'objet 3D (SolidWorks, Blender,...)</li>
+                  <li>Connaissance en hardware (montage/démontage, nettoyage physique et logiciel), participation à la coupe de robotique de Cachan.</li>
+              </ul>
+          </li>
+          <li>Langues maitrisées :
+            <ul>
+                <li>Italien : niveau B2 certifié par le diplôme européen europass—erasmus</li>
+                <li>Anglais : niveaux scolaire BAC +2</li> 
+            </ul>
+          </li>
+          <li>Divers :
+            <ul>
+                <li>Formation PSC1 (premier secours civique) obtenue en janvier 2015</li>
+                <li>2011 : obtention du diplô̂me européen de niveau B2 en Italien (Vérone, Italie)</li> 
+                <li>Hobby : photographie amateur, jeux vidéo, cuisine, lecture, escalade,...</li>
+                <li>Permis B (véhiculée)</li>
+            </ul>
+          </li>
+      </ul>
+    </div>
     </mat-expansion-panel>
   
 
-</mat-accordion>
+</mat-accordion> -->
+<div class="contain">
+  <h1 class="titre">Timeline</h1>
+  <mat-radio-group aria-labelledby="label_tri" class="col-md-9"  (change)="selectionChanged($event)" formControlName="tri">
+    <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="sco">Scolaire</mat-radio-button>
+    <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="perso">Perso et projets</mat-radio-button>
+    <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="exp">Experiences</mat-radio-button>
+    <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="all">Tous</mat-radio-button>
+  </mat-radio-group>
+  <div [ngClass]="exp.type" class="time col-lg-6 col-md-6 col-sm-12" *ngFor="let exp of experiences">
+    <p class="titre2">{{exp.titre}}</p>
+    <p class="annee detail">{{exp.annee}}</p>
+    <p class="detail">{{exp.lieu}}</p>
+    <p class="decription detail">{{exp.decription}}</p>
+  </div>
+</div>

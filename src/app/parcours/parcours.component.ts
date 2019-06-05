@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-parcours',
@@ -99,7 +100,13 @@ export class ParcoursComponent implements OnInit {
       decription : "Bac scientifique option Science de l'ingénieur et Informatique et science du numérique"
     },
   ];
-  constructor() { }
+
+  mini_list = [
+    {src: this.sanitization.bypassSecurityTrustStyle(`url('assets/photos/18.jpg')`)},
+    {src: this.sanitization.bypassSecurityTrustStyle(`url('assets/photos/19.jpg')`)}
+  ]
+
+  constructor(private sanitization: DomSanitizer) { }
 
   
   ngOnInit() {
