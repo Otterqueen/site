@@ -14,10 +14,10 @@ export class ProjectsComponent implements OnInit {
       titre      : 'Quidditch Manager',
       annee      : '2017',
       lang       : 'python, sql, pygame',
-      contexte   : "Jeu de gestion d'équipe sportive en 2D développé dans le cadre de notre projet de fin d'etude d'année spéciale (DUT informatique en 1 an).\
+      contexte   : "Jeu de gestion d'équipe sportive en 2D développé dans le cadre de notre projet de fin d'étude d'année spéciale (DUT informatique en 1 an).\
                     Développé avec l'aide d'Emma Moussaron, Cyril Bougeard et Yann Camelot",
       decription : "Vous gérez votre équipe de quidditch dans un championnat pendant lequel votre équipe va jouer 6 matchs. Entre chaque match vous avez la possibilité de \
-                    gérer les joueurs et de les échanger avec ceux disponibles sur le banc des remplaçants, mais attention, leurs statistiques évoluent suivant leur actions durant les matchs. \
+                    gérer les joueurs et de les échanger avec ceux disponibles sur le banc des remplaçants, mais attention, leurs statistiques évoluent suivant leurs actions durant les matchs. \
                     Pour voir une partie (dont seul le premier tour est réellement joué, le reste étant juste accéléré) cliquez sur la video ci-contre.",
       temps      : '15'
     },
@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
       contexte   : "Jeu ''plateformer'' en 2D développé durant la Climate GameJam 2017.\
                     Modificateur de la goutte d'eau.\
                     Développé sous Unity 3D avec l'aide d'Emma Moussaron.",
-      decription : "Sanch eau Vania se déroule dans notre monde aujourd'hui et dans la situation qui est la notre : 2 degrés de plus et notre pauvre terre ne s'en remettrai pas.\
+      decription : "Sanch eau Vania se déroule dans notre monde aujourd'hui et dans la situation qui est la notre : 2 degrés de plus et notre pauvre terre ne s'en remettrait pas.\
                     Le jeu consiste donc à battre la pollution sans faire monter la température.\
                     (Il faut même la faire descendre d'au moins un degré pour avoir la bonne fin.)",
       temps      : '10'
@@ -73,16 +73,16 @@ export class ProjectsComponent implements OnInit {
       temps      : '5 - 10'
     },
     {
-      type       : 'imqge',
+      type       : 'image',
       src        : '/assets/robot',
       titre      : 'Framboisette, le robot Raspberry pi',
       annee      : '2015',
       lang       : 'Python, linux',
       contexte   : "Framboisette est un robot développé dans le cadre du projet de fin d’étude de mon DUT GEII. \
                     Nous avons codé en Python et le cœur de Framboisette est une Raspberry Pi 2B+.",
-      decription : "Nous avons participé à la coupe de robotique de Cachan. Framboisette a été dessiné, \
-                    construite, et développé entièrement par notre équipe. (Du dessin des cartes à la programmation). \
-                    Elle est programmé pour éviter les obstacles et arriver le plus vite possible jusqu’à sa balise d'arrivée.",
+      decription : "Nous avons participé à la coupe de robotique de Cachan. Framboisette a été dessinée, \
+                    construite, et développée entièrement par notre équipe. (Du dessin des cartes à la programmation). \
+                    Elle est programmée pour éviter les obstacles et arriver le plus vite possible jusqu’à sa balise d'arrivée.",
       temps      : ''
     },
     {
@@ -131,7 +131,7 @@ export class ProjectsComponent implements OnInit {
       note       : '98',
       lang       : 'c',
       decription : "Vous en avez assez de faire vos affichages en alternant ft_putstr et ft_putnbr ? Vous n'avez pas le droit d'utiliser printf ? \
-                    Recodez le votre ! Ce sera l'occasion de découvrir une feature du C - les fonctions variadiques - et de vous entrainer à la gestion fine des options d'affichage. \
+                    Recodez le vôtre ! Ce sera l'occasion de découvrir une feature du C - les fonctions variadiques - et de vous entrainer à la gestion fine des options d'affichage. \
                     Vous aurez ensuite le droit d'utiliser votre printf dans tous vos projets ultérieurs."
     },
   ];

@@ -21,7 +21,7 @@ export class ParcoursComponent implements OnInit {
       annee      : '2019- aujourd\'hui',
       lieu       : 'Lyon',
       decription : "Secretaire du BDE de l'école le-101 et Tutrice mentor au sein de celle-ci. \
-                    Le role des tuteurs est de guider les autres etudiants dans le cursus, de créer/maintenir des partenariats \
+                    Le rôle des tuteurs est de guider les autres etudiants dans le cursus, de créer/maintenir des partenariats \
                     et de créer des activités pédagogiques ou encore d'assister le bocal lors des examens, \
                     des piscines ou lors de la création de nouveaux sujets. \
                     Les tuteurs mentors sont les référents des tuteurs."
@@ -47,7 +47,7 @@ export class ParcoursComponent implements OnInit {
       titre      : 'DUT Informatique ',
       annee      : '2016–2017',
       lieu       : 'IUT de Montpellier',
-      decription : "Année Speciale DUT informatique : le DUT mais en un an avec le stage l'été"
+      decription : "Année Spéciale DUT informatique : le DUT mais en un an avec le stage l'été"
     },
     {
       type       : 'perso',
@@ -55,8 +55,8 @@ export class ParcoursComponent implements OnInit {
       annee      : '2016',
       lieu       : 'Montpellier / Castrie',
       decription : "La Game pratic' et la climate sont toutes deux des Game Jam : des événements \
-                    pendant lequels les participants doivent develloper un jeux vidéo fonctionel dans un délai de 48h. \
-                    Game pratic\' de la région Occitanie :s 2éme prix remporté (voir projet), \
+                    pendant lequels les participants doivent développer un jeux vidéo fonctionnel dans un délai de 48h. \
+                    Game pratic\' de la région Occitanie : 2éme prix remporté (voir projet), \
                     avec ''détours obscur'' jeu d’exploration en 3D développé en JavaScript sous Unity. \
                     Et climate Game Jam à Castrie."
     },
@@ -72,7 +72,7 @@ export class ParcoursComponent implements OnInit {
       titre      : 'DUT GEII',
       annee      : '2014–2016',
       lieu       : 'Saint-Etienne puis Montpellier',
-      decription : "Diplome universitaire en génie éléctrique et informatique industrielle"
+      decription : "Diplôme universitaire en génie éléctrique et informatique industrielle"
     },
     {
       type       : 'perso',
@@ -87,7 +87,7 @@ export class ParcoursComponent implements OnInit {
       annee      : '2015',
       lieu       : 'Montpellier, Castrie',
       decription : "La Game pratic' et la climate sont toutes deux des Game Jam : des événements \
-                    pendant lequels les participants doivent develloper un jeux vidéo fonctionel dans un délai de 48h. \
+                    pendant lequels les participants doivent développer un jeux vidéo fonctionnel dans un délai de 48h. \
                     Game pratic\' de la région Occitanie organisée par l’association Antithèse \
                     Et climate Game Jam à Castrie."
     },
