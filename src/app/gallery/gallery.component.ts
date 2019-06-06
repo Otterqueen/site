@@ -9,11 +9,24 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 export class GalleryComponent implements OnInit {
 
   @Input() src_list : Array<any>;
+  @Input() type : String;
+
+  image = false;
+  projet = false;
 
   constructor(private sanitization: DomSanitizer) { }
 
   ngOnInit() {
-    console.log("list = ", this.src_list);
+    console.log("type = ", this.type);
+    if (this.type == "image")
+    {
+      this.image = true;
+      this.projet = false;
+    }
+    else{
+      this.projet = true;
+      this.image = false;
+    }
   }
 
   show_viewer(img_src){
@@ -35,5 +48,10 @@ export class GalleryComponent implements OnInit {
 
   hide_viewer(){
     document.getElementById('canvas').style.display = 'none';
+  }
+
+  lien(lien){
+    console.log("image=  ", this.image, "\n projet = ", this.projet)
+    console.log("lien  =",lien)
   }
 }

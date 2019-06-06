@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//const fs = require('fs');
-
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 @Component({
   selector: 'principal',
@@ -10,19 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class PrincipalComponent implements OnInit {
 
-  /*path = '../../assets/imgs';
-  imgs=[];*/
+  imgs = [
+    {src: this.sanitization.bypassSecurityTrustStyle(`url('assets/photos/1.jpg')`) , mini_src : this.sanitization.bypassSecurityTrustStyle(`url('assets/photos/mini_1.jpg')`)}
+    ]
 
-  constructor() { }
+  constructor(private sanitization: DomSanitizer) { }
 
   ngOnInit() {
-    /*fs.readdir(this.path, function(err, items) {
-      console.log(items);
-   
-      for (var i=0; i<items.length; i++) {
-          console.log(items[i]);
-      }
-  });*/
   }
 
 }
