@@ -10,13 +10,6 @@ export class ParcoursComponent implements OnInit {
   
   experiences = [
     {
-      type       : 'sco',
-      titre      : 'Ecole le 101',
-      annee      : '2017- aujourd\'hui',
-      lieu       : 'Lyon',
-      decription : "Campus de 42 à Lyon, le-101 est une école basée sur le peer-learning, l'entraide et la motivation"
-    },
-    {
       type       : 'perso',
       titre      : 'Secretaire et tutrice',
       annee      : '2019- aujourd\'hui',
@@ -26,6 +19,13 @@ export class ParcoursComponent implements OnInit {
                     et de créer des activités pédagogiques ou encore d'assister le bocal lors des examens, \
                     des piscines ou lors de la création de nouveaux sujets. \
                     Les tuteurs mentors sont les référents des tuteurs."
+    },
+    {
+      type       : 'scolaire',
+      titre      : 'Ecole le 101',
+      annee      : '2017- aujourd\'hui',
+      lieu       : 'Lyon',
+      decription : "Campus de 42 à Lyon, le-101 est une école basée sur le peer-learning, l'entraide et la motivation."
     },
     {
       type       : 'perso',
@@ -44,11 +44,13 @@ export class ParcoursComponent implements OnInit {
                     Technologies utilisées : java, JS, HTML5, Bootstrap, AngularJS, ..."
     },
     {
-      type       : 'sco',
+      type       : 'scolaire',
       titre      : 'DUT Informatique ',
       annee      : '2016–2017',
       lieu       : 'IUT de Montpellier',
-      decription : "Année Spéciale DUT informatique : le DUT mais en un an avec le stage l'été"
+      decription : "Année Spéciale DUT informatique : le diplôme universitaire technologique en informatique mais en un an.\
+                    C'est-à-dire avec le programme de la première année pendant le premier semestre, celui de la deuxième année \
+                    pendant le deuxième et le stage durant l'été."
     },
     {
       type       : 'perso',
@@ -69,11 +71,11 @@ export class ParcoursComponent implements OnInit {
       decription : "Création d’un firmware et d’un protocole d’étalonnage pour sonde intelligente entre une Raspberry Pi et un microcontrôleur branché à la sonde.​"
     },
     {
-      type       : 'sco',
+      type       : 'scolaire',
       titre      : 'DUT GEII',
       annee      : '2014–2016',
       lieu       : 'Saint-Etienne puis Montpellier',
-      decription : "Diplôme universitaire en génie éléctrique et informatique industrielle"
+      decription : "Diplôme universitaire en génie éléctrique et informatique industrielle."
     },
     {
       type       : 'perso',
@@ -93,12 +95,12 @@ export class ParcoursComponent implements OnInit {
                     Et climate Game Jam à Castrie."
     },
     {
-      type       : 'sco',
+      type       : 'scolaire',
       titre      : 'Obtention du BAC S – Science de l’Ingénieur',
       annee      : '2014',
       lieu       : 'Lycée Georges Brassens à Rive-de-Gier',
-      decription : "Bac scientifique option Science de l'ingénieur et Informatique et science du numérique"
-    },
+      decription : "Bac scientifique option Science de l'ingénieur et Informatique et science du numérique."
+    }
   ];
 
   mini_list = [
@@ -123,6 +125,27 @@ export class ParcoursComponent implements OnInit {
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/linux.png'), name: 'Tech. Linux'},
 
   ]
+  skills = [
+
+    {name: 'CSS3', note:'80'},
+    {name: 'PHP', note:'70'},
+    {name: 'angular', note:'78'},
+    {name: 'NodeJS', note:'82'},
+    {name: 'MongoDB', note:'65'},
+    {name: 'My sql', note:'80'},
+    //{name: 'postgreSql', note:'50'},
+    {name: 'JAVA', note:'70'},
+    {name: 'JavaScript', note:'80'},
+    {name: 'Unity3D -- UnityScript', note:'80'},
+    {name: 'Python', note:'75'},
+    {name: 'C/C++', note:'75'},
+    
+    // {name: 'Visual Studio'},
+    // {name: 'Photoshop'},
+    // {name: 'Raspberry'},
+    // {name: 'Linux'},
+
+  ]
 
   constructor(private sanitization: DomSanitizer) { }
 
@@ -131,15 +154,15 @@ export class ParcoursComponent implements OnInit {
   }
 
   selectionChanged(item) {
-    console.log("value = ", item.value);
-    let scos = document.getElementsByClassName("sco") as HTMLCollectionOf<HTMLElement>;
+  
     let persos = document.getElementsByClassName("perso") as HTMLCollectionOf<HTMLElement>;
+    let scolaire = document.getElementsByClassName("scolaire") as HTMLCollectionOf<HTMLElement>;
     let exps = document.getElementsByClassName("exp") as HTMLCollectionOf<HTMLElement>;
     switch (item.value) {
       case 'exp':
-        for(var i=0; i< scos.length; i++)
+        for(var i=0; i< scolaire.length; i++)
         {
-          scos[i].style.display = "none";
+          scolaire[i].style.display = "none";
         }
         for(var j=0; j< persos.length; j++)
         {
@@ -149,12 +172,11 @@ export class ParcoursComponent implements OnInit {
         {
           exps[k].style.display = "block";
         }
-        console.log("case exp ");
         break;
       case 'sco':
-        for(var i=0; i< scos.length; i++)
+        for(var i=0; i< scolaire.length; i++)
         {
-          scos[i].style.display = "block";
+          scolaire[i].style.display = "block";
         }
         for(var j=0; j< persos.length; j++)
         {
@@ -164,12 +186,11 @@ export class ParcoursComponent implements OnInit {
         {
           exps[k].style.display = "none";
         }
-        //console.log("case sco \n scos = ", scos);
         break;
       case 'perso':
-        for(var i=0; i< scos.length; i++)
+        for(var i=0; i< scolaire.length; i++)
         {
-          scos[i].style.display = "none";
+          scolaire[i].style.display = "none";
         }
         for(var j=0; j< persos.length; j++)
         {
@@ -179,13 +200,12 @@ export class ParcoursComponent implements OnInit {
         {
           exps[k].style.display = "none";
         }
-        console.log("case perso ");
         break;
       default:
       case 'all':
-        for(var i=0; i< scos.length; i++)
+        for(var i=0; i< scolaire.length; i++)
         {
-          scos[i].style.display = "block";
+          scolaire[i].style.display = "block";
         }
         for(var j=0; j< persos.length; j++)
         {
@@ -195,7 +215,6 @@ export class ParcoursComponent implements OnInit {
         {
           exps[k].style.display = "block";
         }
-        console.log("case default ");
         break;
     }
   }

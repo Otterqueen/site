@@ -1,7 +1,6 @@
-<mat-accordion [displayMode]='flat' >
+<mat-accordion [displayMode]='flat' [multi]='true'>
 
-  <!-- <mat-expansion-panel class="contain" [expanded]="true"> -->
-  <mat-expansion-panel class="contain">
+  <mat-expansion-panel class="contain" [expanded]="true">
     <mat-expansion-panel-header>
     <mat-panel-description>
         Timeline
@@ -10,10 +9,11 @@
 
     <div class="contain">
       <h1 class="titre">Timeline</h1>
-      <mat-radio-group aria-labelledby="label_tri" class="col-md-9"  (change)="selectionChanged($event)" formControlName="tri">
-        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="sco">Scolaire</mat-radio-button>
+      <mat-radio-group aria-labelledby="label_tri" class="col-md-9"  (change)="selectionChanged($event)" formControlName="tri" value="all">
+        
         <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="perso">Perso et projets</mat-radio-button>
         <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="exp">Experiences</mat-radio-button>
+        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="sco">Scolaire</mat-radio-button>
         <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="all">Tous</mat-radio-button>
       </mat-radio-group>
       <div [ngClass]="exp.type" class="time col-lg-6 col-md-6 col-sm-12" *ngFor="let exp of experiences">
@@ -44,12 +44,15 @@
                   <li> <span class="fa-li" ><i class="fas fa-cubes"></i></span>Maîtrise de logiciel de création d'objet 3D (SolidWorks, Blender,...)</li>
                   <li> <span class="fa-li" ><i class="fas fa-microchip"></i></span>Connaissance en hardware (montage/démontage, nettoyage physique et logiciel), participation à la coupe de robotique de Cachan.</li>
               </ul>
-              <div class="mini_contain">
-                <div class="mini" *ngFor="let img of mini_list" >
-                  <img [src]="img.src">
-                  <div>{{img.name}}</div>
+              <div id="center_mini">
+                <div class="mini_contain">
+                  <div class="mini" *ngFor="let img of mini_list" >
+                    <img [src]="img.src">
+                    <div>{{img.name}}</div>
+                  </div>
                 </div>
               </div>
+              
           </li>
           <li class="list_head"><span class="fa-li" ><i class="fas fa-globe-europe"></i></span>Langues maitrisées :
             <ul class="fa-ul">
@@ -79,9 +82,9 @@
 
       <h2>Skills : </h2>
       <div class="bars">
-        <p class="bar">lol : 
-          <mat-progress-bar mode="determinate" value="40"></mat-progress-bar></p>
-        <p class="bar">mdr :
+        <p class="bar" *ngFor="let skill of skills">{{skill.name}} : 
+          <mat-progress-bar mode="determinate" [value]="skill.note"></mat-progress-bar></p>
+        <!-- <p class="bar">mdr :
           <mat-progress-bar mode="determinate" value="60"></mat-progress-bar></p>
         <p class="bar">mdr :
           <mat-progress-bar mode="determinate" value="60"></mat-progress-bar></p>
@@ -94,7 +97,7 @@
         <p class="bar">mdr :
           <mat-progress-bar mode="determinate" value="60"></mat-progress-bar></p>
         <p class="bar">mdr :
-          <mat-progress-bar mode="determinate" value="60"></mat-progress-bar></p>
+          <mat-progress-bar mode="determinate" value="60"></mat-progress-bar></p> -->
       </div>
 
     </div>
