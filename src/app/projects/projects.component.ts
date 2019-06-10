@@ -12,6 +12,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'video',
       src        : 'https://player.vimeo.com/video/260747477',
       titre      : 'Quidditch Manager',
+      hash       : 'Quidditch',
       annee      : '2017',
       lang       : 'python, sql, pygame',
       contexte   : "Jeu de gestion d'équipe sportive en 2D développé dans le cadre de notre projet de fin d'étude d'année spéciale (DUT informatique en 1 an).\
@@ -25,6 +26,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'video',       
       src        : 'https://player.vimeo.com/video/260747271',
       titre      : 'Sanch eau vania',
+      hash       : 'Sanch',
       annee      : '2017',
       lang       : 'Unity 3D, JavaScript (UnityScript)',
       contexte   : "Jeu ''plateformer'' en 2D développé durant la Climate GameJam 2017.\
@@ -39,6 +41,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'video',       
       src        : 'https://player.vimeo.com/video/198478875',
       titre      : 'Détour Obscur',
+      hash       : 'Detour',
       annee      : '2016',
       lang       : 'Unity 3D, JavaScript (UnityScript)',
       contexte   : "Jeu ''explorer'' en 3D développé durant la Game pratic' 2016. 2ème prix.",
@@ -50,6 +53,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'video',
       src        : 'https://www.youtube.com/embed/NXxL8e8WtrU',
       titre      : 'World Eater',
+      hash       : 'World',
       annee      : '2016',
       lang       : 'GML (Game Maker Language)',
       contexte   : "Jeu ''Shoot them All'' en 2D, développé dans la cadre de la Climate Game Jam 2016\
@@ -63,6 +67,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'video',
       src        : 'https://player.vimeo.com/video/198479089',
       titre      : 'L\'inventoriste Compulsif',
+      hash       : 'Compulsif',
       annee      : '2015',
       lang       : 'Python, PyGame',
       contexte   : "Jeu ''Point and click'', développé lors de la Game Pratic' 2015\
@@ -76,6 +81,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'image',
       src        : '/assets/robot',
       titre      : 'Framboisette, le robot Raspberry pi',
+      hash       : 'Framboisette',
       annee      : '2015',
       lang       : 'Python, linux',
       contexte   : "Framboisette est un robot développé dans le cadre du projet de fin d’étude de mon DUT GEII. \
@@ -89,6 +95,7 @@ export class ProjectsComponent implements OnInit {
       type       : 'video',
       src        : 'https://player.vimeo.com/video/198479201',
       titre      : 'Chauve souris',
+      hash       : 'Chauve',
       annee      : '2014',
       lang       : 'Python, Pygame',
       contexte   : "Jeu ''Flappy Bird like'', développé dans le cadre de mon projet de fin d'année en terminale. Note au bac = 16/20",

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
+import {Router, ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'gallery',
@@ -14,7 +15,8 @@ export class GalleryComponent implements OnInit {
   image = false;
   projet = false;
 
-  constructor(private sanitization: DomSanitizer) { }
+  constructor(private sanitization: DomSanitizer,
+              private router: Router) { }
 
   ngOnInit() {
     console.log("type = ", this.type);
@@ -53,5 +55,7 @@ export class GalleryComponent implements OnInit {
   lien(lien){
     console.log("image=  ", this.image, "\n projet = ", this.projet)
     console.log("lien  =",lien)
+    //this.router.navigate([lien]);
+    this.router.navigate(['/projects'], {fragment: "Chauve"});
   }
 }

@@ -18,6 +18,7 @@ export class ProjetDetailsComponent implements OnInit {
   @Input() contexte  : string;
   @Input() decription: string;
   @Input() temps     : string;
+  @Input() hash     : string;
   src_video : SafeUrl = this.sanitization.bypassSecurityTrustResourceUrl(this.src);
   video : boolean;
 
