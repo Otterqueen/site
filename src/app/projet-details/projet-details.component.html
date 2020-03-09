@@ -6,6 +6,6 @@
   <p *ngIf="temps">Temps de jeu approximatif : <span class="details">{{temps}} min</span></p>
   <p>Contexte : <span class="details">{{contexte}}</span></p>
   <iframe *ngIf="test_type()" class="video" [src]='photoURL()' width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-  <gallery-project *ngIf="!test_type()" [src]="src"></gallery-project>
+  <gallery-project *ngIf="!test_type()" [src]='src'></gallery-project>
   <p>En savoir plus : <span class="details">{{decription}}</span></p>
 </div>

@@ -11,10 +11,34 @@ export class ParcoursComponent implements OnInit {
   experiences = [
     {
       type       : 'perso',
+      titre      : 'Trésorière adjointe de la GameDevParty',
+      annee      : 'Février 2020 - aujourd\'hui',
+      lieu       : 'Lyon ',
+      decription : "La GameDevParty est une association à but non lucratif qui organise des apéros, des conférences, des cours et bien d’autre événements axées sur le monde vidéoludique indépendant. \
+                    Les game jams organisées par l’asso sont gratuits et non compétitives."
+    },
+    {
+      type       : 'exp',
+      titre      : 'Stage',
+      annee      : '19 août 2019 - 17 février 2020',
+      lieu       : 'Adrenalead, Lyon 7ème',
+      decription : "Adrenalead est une startup dans le web marketting, mon rôle au sein de l'équipe de développement était d'appuyer le lead dev en tant que développeuse full stack. \
+                    Principales missions : amélioration et création de nouvelles feature sur le site Notifadz, créations de nouvelles bases de données, amélioration de solution existante, créations de nouvelles sources d’acquisition, … \
+                    Langages utilisés : php, js, jquery, bootstrap, css, html, myslq, pgsql, elasticSearch, redis, nodeJS, … "
+    },
+    {
+      type       : 'perso',
+      titre      : 'GameJam 15 de la GameDevParty',
+      annee      : '8 au 11 novembre 2019',
+      lieu       : 'Lyon ',
+      decription : "La GameDevParty organise des GameJam gratuites et non competitives. Le jeu crée lors de cet evenement est visible dans l'onglets mes projets et s'intitule 'Full Garbage Alchemist' "
+    },
+    {
+      type       : 'perso',
       titre      : 'Secretaire et tutrice',
-      annee      : '2019- aujourd\'hui',
+      annee      : '2019 - aujourd\'hui',
       lieu       : 'Lyon',
-      decription : "Secretaire du BDE de l'école le-101 et Tutrice mentor au sein de celle-ci. \
+      decription : "Secretaire du BDE de 42Lyon (anciennement l'école le-101) et Tutrice mentor au sein de celle-ci. \
                     Le rôle des tuteurs est de guider les autres etudiants dans le cursus, de créer/maintenir des partenariats \
                     et de créer des activités pédagogiques ou encore d'assister le bocal lors des examens, \
                     des piscines ou lors de la création de nouveaux sujets. \
@@ -22,15 +46,15 @@ export class ParcoursComponent implements OnInit {
     },
     {
       type       : 'scolaire',
-      titre      : 'Ecole le 101',
-      annee      : '2017- aujourd\'hui',
+      titre      : '42Lyon (anciennement l\'école le-101)',
+      annee      : '2017 - aujourd\'hui',
       lieu       : 'Lyon',
       decription : "Campus de 42 à Lyon, le-101 est une école basée sur le peer-learning, l'entraide et la motivation."
     },
     {
       type       : 'perso',
       titre      : 'vice-secretaire',
-      annee      : '2017-2018',
+      annee      : '2017 - 2018',
       lieu       : 'Lyon',
       decription : "Vice-secretaire du premier BDE de l'école le-101."
     },
@@ -46,7 +70,7 @@ export class ParcoursComponent implements OnInit {
     {
       type       : 'scolaire',
       titre      : 'DUT Informatique ',
-      annee      : '2016–2017',
+      annee      : '2016 – 2017',
       lieu       : 'IUT de Montpellier',
       decription : "Année Spéciale DUT informatique : le diplôme universitaire technologique en informatique mais en un an.\
                     C'est-à-dire avec le programme de la première année pendant le premier semestre, celui de la deuxième année \

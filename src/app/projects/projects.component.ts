@@ -9,6 +9,20 @@ export class ProjectsComponent implements OnInit {
 
   projets = [
     {
+      type       : 'image',
+      src        : '/assets/alchemist',
+      titre      : 'Full Garbage Alchemist',
+      hash       : 'Alchemist',
+      annee      : '2019',
+      lang       : 'Unity 3D, C#',
+      contexte   : "Jeu de puzzle développé lors de la GameJam15 organisé par l'association GameDevParty du 8 au 11 novembre 2019.\
+                    Développé avec l'aide de Suzanne et Ulysse que vous pourrez retrouver dans le lien suivant : https://gamedevparty.fr/interview-full-garbage-alchemist-game-jam-15/",
+      decription : "Vous incarnez un alchimiste qui vit dans une contrée dans laquelle les déchets sont réglementés. Vous devez donc, au fil des niveaux fabriquer les potions demandées par vos clients sans faire de déchets.\
+                    Pour ce faire vous avez à votre disposition un grimoire qui vous explique le fonctionnement de la chimie local et à l'aide de diagrammes explicatifs vous savez donc quelle combinaison d'élément et de couleur\
+                    va produire quel élément/couleur et quelle quantité de déchets ! Ce jeu est téléchargeable à l'adresse suivante pour Mac et pour Windows  https://waaru.itch.io/full-garbage-alchemist",
+      temps      : '30-60'
+    },
+    {
       type       : 'video',
       src        : 'https://player.vimeo.com/video/260747477',
       titre      : 'Quidditch Manager',
