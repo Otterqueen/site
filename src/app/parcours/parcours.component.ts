@@ -148,6 +148,12 @@ export class ParcoursComponent implements OnInit {
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Raspberry.png'), name: 'Tech. Raspberry'},
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/linux.png'), name: 'Tech. Linux'},
 
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/HTML5.png'), name: 'Web HTML5'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Jquery.png'), name: 'Web Jquery'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/bootstrap.png'), name: 'Web Bootstrap'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/docker.png'), name: 'Log. Docker'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/elasticsearch-logo-300x193.png'), name: 'BDD ElasticSearch'},
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/kibana.png'), name: 'U.I. Kibana'},
   ]
   skills = [
 

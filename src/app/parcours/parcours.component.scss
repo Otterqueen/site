@@ -1,12 +1,11 @@
 .titre{
     text-align: center;
-    //color: white;
     text-decoration: underline;
 
 }
 .contain{
     margin-top: 10px;
-    background: grey;
+    background: #9e9a9a;
     //background-image: url('../../assets/back7.jpg');
     display: flex;
     flex-direction: column;
@@ -17,20 +16,13 @@
 }
 .titre2{
     text-align: center;
-    border-bottom: solid 2px;
-    border-bottom-left-radius: 20px;
+    //border-bottom: solid 2px;
     margin: 0;
 }
 
 .time{
-    //background-color: blanchedalmond;
     border-left: solid 7px black;
     padding: 0;
-}
-
-.annee{
-    border-top: solid 2px;
-    border-top-left-radius: 20px;
 }
 
 .detail{
@@ -51,15 +43,16 @@
     box-shadow: none;
 }
 
-.scolaire{
+.scolaire .titre2{
     background-color: rgba(240, 248, 255, 0.507);
 }
-.exp{
+.exp .titre2{
     background-color:rgba(228, 187, 255, 0.507);
 }
-.perso{
+.perso .titre2{
     background-color:rgba(218, 255, 187, 0.507);
 }
+
 
 .bars{
     display: flex;
@@ -139,6 +132,7 @@ mat-progress-bar{
     justify-content: center;
 }
 
-#top{
-    margin-top: 10px
+#bot{
+    padding-right: 20%;
+    padding-left: 20%;
 }
