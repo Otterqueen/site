@@ -1,9 +1,7 @@
 .principal{
     height: 100%;
-    //background-color: #6498877d;
     background-color: white;
     text-align: center;
-    //border-top: solid 10px white;
 }
 
 .about_me{
@@ -11,14 +9,14 @@
     background-image: url('../../assets/back3.jpg');
     background-size: cover;
     padding: 20px;
-    //margin-top: 10px;
     padding-left: 20%;
     padding-right: 20%;
 }
 
 .titre{
     text-align: center;
-    text-decoration: underline;
+    font-family: Caviar;
+    //text-decoration: underline;
 }
 #photo
 {
@@ -44,7 +42,6 @@
 }
 
 .boutons{
-    //margin-top: 10px;
     padding: 20px;
     background-image: url('../../assets/back5.jpg');
     display: flex;
