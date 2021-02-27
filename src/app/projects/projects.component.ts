@@ -15,11 +15,11 @@ export class ProjectsComponent implements OnInit {
       hash       : 'G4G',
       annee      : '2020',
       lang       : 'Unity 3D, C#',
-      contexte   : "Développé dans le cadre d’un hackathon Hackathon Ready Player 42 organisé par 42 entrepreneur Paris, Fall Girl est un platformer.\
+      contexte   : "Développé dans le cadre du Hackathon Ready Player 42 organisé par 42entrepreneurs Paris, Fall Girl est un platformer.\
                    Développé avec l'aide de Coline Faure-Geors et Louise Pieri. Nous avons gagné le prix des meilleures ventes lors de cet hackathon et remporté ainsi 1000 euros.",
       decription : "Fall Girl est un platformer où nous contrôlons les plateformes pour sauver un personnage en train de tomber dans le vide.\
                   Cette façon de jouer est tout à fait innovante car pour la première fois notre but est de sauver la vie de notre personnage sans jamais interagir avec lui.\
-                  Aujourd’hui Fall Girl est une beta adaptée pour les ordinateurs afin de répondre à la demande du Hackathon Ready Player 42, mais un jour il sera surement développé de façon plus complète (objectif jeu complet 2022).\
+                  Aujourd’hui Fall Girl est une beta adaptée pour les ordinateurs afin de répondre à la demande du Hackathon Ready Player 42, mais un jour il sera sûrement développé de façon plus complète (objectif jeu complet 2022).\
                   Fall Girl est une manière de déconstruire les normes de son propre univers afin d’offrir une nouvelle expérience de jeu.\
                   Vous pouvez télécharger le jeu (Win, MacOs, Android) à l'adresse suivante : https://otterqueen.itch.io/fall-girl",
       temps      : '1-120'
@@ -191,7 +191,7 @@ export class ProjectsComponent implements OnInit {
       note       : '98',
       lang       : 'c',
       decription : "Vous en avez assez de faire vos affichages en alternant ft_putstr et ft_putnbr ? Vous n'avez pas le droit d'utiliser printf ? \
-                    Recodez le vôtre ! Ce sera l'occasion de découvrir une feature du C - les fonctions variadiques - et de vous entrainer à la gestion fine des options d'affichage. \
+                    Recodez le vôtre ! Ce sera l'occasion de découvrir une feature du C - les fonctions variadiques - et de vous entraîner à la gestion fine des options d'affichage. \
                     Vous aurez ensuite le droit d'utiliser votre printf dans tous vos projets ultérieurs."
     },
   ];
