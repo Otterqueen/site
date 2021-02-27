@@ -16,6 +16,7 @@
         </mat-tab>
         <mat-tab label="Ecole 42">
             <projet-ecole *ngFor="let projet of projets_ecole"
+            [group_bool] = "projet.group_bool"
             [duree]="projet.duree"
             [titre]="projet.titre"
             [note]="projet.note"

@@ -9,6 +9,22 @@ export class ProjectsComponent implements OnInit {
 
   projets = [
     {
+      type       : 'video',
+      src        : 'https://www.youtube.com/embed/9cey6-75uwg',
+      titre      : 'Fall Girl',
+      hash       : 'G4G',
+      annee      : '2020',
+      lang       : 'Unity 3D, C#',
+      contexte   : "Développé dans le cadre d’un hackathon Hackathon Ready Player 42 organisé par 42 entrepreneur Paris, Fall Girl est un platformer.\
+                   Développé avec l'aide de Coline Faure-Geors et Louise Pieri. Nous avons gagné le prix des meilleures ventes lors de cet hackathon et remporté ainsi 1000 euros.",
+      decription : "Fall Girl est un platformer où nous contrôlons les plateformes pour sauver un personnage en train de tomber dans le vide.\
+                  Cette façon de jouer est tout à fait innovante car pour la première fois notre but est de sauver la vie de notre personnage sans jamais interagir avec lui.\
+                  Aujourd’hui Fall Girl est une beta adaptée pour les ordinateurs afin de répondre à la demande du Hackathon Ready Player 42, mais un jour il sera surement développé de façon plus complète (objectif jeu complet 2022).\
+                  Fall Girl est une manière de déconstruire les normes de son propre univers afin d’offrir une nouvelle expérience de jeu.\
+                  Vous pouvez télécharger le jeu (Win, MacOs, Android) à l'adresse suivante : https://otterqueen.itch.io/fall-girl",
+      temps      : '1-120'
+    },
+    {
       type       : 'image',
       src        : '/assets/alchemist',
       titre      : 'Full Garbage Alchemist',
@@ -122,8 +138,28 @@ export class ProjectsComponent implements OnInit {
 
   projets_ecole = [
     {
+      duree      : '1 semaine',
+      group_bool : 'no-group',
+      titre      : 'Dr-Quine',
+      note       : '125',
+      lang       : 'C, ASM, Python',
+      decription : "Ce petit projet d'algo vous permet d'aborder les problématiques de l'auto-réplication, et vous confronte au théorème de récursion de Kleene !\
+                    Le projet est à réaliser entièrement en C, puis en ASM, puis de nouveau dans le langage de votre choix (ici Python)"
+    },
+    {
+      duree      : '3 semaines',
+      titre      : 'Darkly',
+      group_bool : 'group',
+      note       : '125',
+      lang       : 'HTML, SQL, bash, Python',
+      decription : "Projet introductif à la sécurité en informatique dans le domaine spécifique du web, ce projet va vous faire disséquer un site web vulnérable. \
+                    Ce faisant, vous allez développer votre propre façon de penser sécurité dans une application web et prendre conscience des problèmes liés à de \
+                    simples erreurs de développement, autant d'un point de vue programmation que d'un point de vue conception."
+    },
+    {
       duree      : '1 mois',
       titre      : 'Hypertube',
+      group_bool : 'group',
       note       : '122',
       lang       : 'NodeJS, angular, html5, scss, mongoBd, docker',
       decription : "Dernier projet de sa série, le projet Hypertube vous invite à découvrir une catégorie d'outil extrêmement puissante : les frameworks MVC. \
@@ -132,6 +168,7 @@ export class ProjectsComponent implements OnInit {
     {
       duree      : '3 mois',
       titre      : 'Matcha',
+      group_bool : 'group',
       note       : '91',
       lang       : 'nodeJS, html5, css, docker, SQL, mySql',
       decription : "Ce second projet vous introduit à un outil plus évolué pour réaliser vos applications web : le micro-framework. Nous vous invitons à réaliser, \
@@ -140,6 +177,7 @@ export class ProjectsComponent implements OnInit {
     {
       duree      : '2 mois',
       titre      : 'Camagru',
+      group_bool : 'no-group',
       note       : '117',
       lang       : 'php, html5, css, js',
       decription : "Ce premier projet vous remet dans le bain après la piscine PHP : vous allez devoir réaliser, en PHP, un petit site Instagram-like permettant à des \
@@ -149,6 +187,7 @@ export class ProjectsComponent implements OnInit {
     {
       duree      : '4 mois et demi',
       titre      : 'Ft_printf',
+      group_bool : 'no-group',
       note       : '98',
       lang       : 'c',
       decription : "Vous en avez assez de faire vos affichages en alternant ft_putstr et ft_putnbr ? Vous n'avez pas le droit d'utiliser printf ? \

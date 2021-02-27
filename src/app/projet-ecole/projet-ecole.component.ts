@@ -14,6 +14,7 @@ export class ProjetEcoleComponent implements OnInit {
   @Input() note       : string;
   @Input() decription : string;
   @Input() lang       : string;
+  @Input() group_bool : string;
 
 
   ngOnInit() {
