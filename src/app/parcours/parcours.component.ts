@@ -10,9 +10,35 @@ export class ParcoursComponent implements OnInit {
   
   experiences = [
     {
+      type       : 'exp',
+      titre      : 'Mission Freelance',
+      annee      : 'Janvier - Février 2021',
+      lieu       : 'Saint-Etienne',
+      decription : "Mise à niveau des outils informatiques d’une association. Upgrade hardware des postes fixes (ajout de RAM), puis installation de nouveaux logiciels, \
+                    et création d’une VM afin d'assurer en douceur le passage et le suivi sans arrêter les activités de l’association. \
+                    Et enfin, formation des personnes concernées sur le nouveau logiciel (ACCESS)."
+    },
+    {
+      type       : 'perso',
+      titre      : 'Tutrice référente',
+      annee      : 'Février 2021 - aujourd\'hui',
+      lieu       : 'Lyon',
+      decription : "Le rôle des tuteurs référents est de gérer l'organisation des tuteurs et de recruter les nouveaux afin de les former. "
+    },
+    {
+      type       : 'exp',
+      titre      : 'Mission Freelance',
+      annee      : 'Novembre - decembre 2020',
+      lieu       : 'Lyon',
+      decription : "Développement d’une application desktop qui permet à l'utilisateur de se connecter avec un compte déjà existant sur le site du client, \
+                    puis de gérer ses informations personelles, son pseudo sur le jeu League of Legends, puis d'enregistrer, automatiquement ou non, les parties jouées,\
+                    de les gérer, et de les sauvegarder sur le cdn du client si l’utilisateur le souhaite. \
+                    Langages utilisés : App en électron, JS / Python, API (client et RiotGames), HTLM/CSS, Pascal (innoSetup Config)"
+    },
+    {
       type       : 'perso',
       titre      : 'Trésorière adjointe de la GameDevParty',
-      annee      : 'Février 2020 - aujourd\'hui',
+      annee      : 'Février 2020 - Février 2021',
       lieu       : 'Lyon ',
       decription : "La GameDevParty est une association à but non lucratif qui organise des apéros, des conférences, des cours et bien d’autre événements axées sur le monde vidéoludique indépendant. \
                     Les game jams organisées par l’asso sont gratuits et non compétitives."
@@ -36,7 +62,7 @@ export class ParcoursComponent implements OnInit {
     {
       type       : 'perso',
       titre      : 'Secretaire et tutrice',
-      annee      : '2019 - aujourd\'hui',
+      annee      : '2019 - Février 2021',
       lieu       : 'Lyon',
       decription : "Secretaire du BDE de 42Lyon (anciennement l'école le-101) et Tutrice mentor au sein de celle-ci. \
                     Le rôle des tuteurs est de guider les autres etudiants dans le cursus, de créer/maintenir des partenariats \
