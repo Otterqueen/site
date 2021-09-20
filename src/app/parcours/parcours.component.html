@@ -1,30 +1,5 @@
 <mat-accordion [multi]="true">
 
-  <mat-expansion-panel class="contain" id="top" [expanded]="true">
-    <mat-expansion-panel-header>
-    <mat-panel-description>
-        Timeline
-    </mat-panel-description>
-    </mat-expansion-panel-header>
-
-    <div class="contain">
-      <h1 class="titre">Timeline</h1>
-      <mat-radio-group aria-labelledby="label_tri" class="col-md-9"  (change)="selectionChanged($event)" formControlName="tri" value="all">
-        
-        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="perso">Perso et projets</mat-radio-button>
-        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="exp">Experiences</mat-radio-button>
-        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="sco">Scolaire</mat-radio-button>
-        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="all">Tous</mat-radio-button>
-      </mat-radio-group>
-      <div [ngClass]="exp.type" class="time col-lg-6 col-md-6 col-sm-12" *ngFor="let exp of experiences">
-        <p class="titre2">{{exp.titre}}</p>
-        <p class="annee detail">{{exp.annee}}</p>
-        <p class="detail">{{exp.lieu}}</p>
-        <p class="decription detail">{{exp.decription}}</p>
-      </div>
-    </div>
-  </mat-expansion-panel>
-
   <mat-expansion-panel class="contain" id="bot" [expanded]="true">
       <mat-expansion-panel-header>
       <mat-panel-description>
@@ -35,6 +10,40 @@
       <div class="">
         <h1 class="titre">Mon CV</h1>
 
+        <h2>Expérience professionnelle : </h2>
+        <ul class="fa-ul">
+          <li class="list_head">
+            Depuis 2020
+              <span class="kind">  Freelance </span>
+              <span class="where"> Region Rhône-Alpes</span>
+              <div class="what">   Missions dans différents domaines (cours, hardware, Full Stack, VM)</div>
+          </li>
+        </ul>
+        <ul class="fa-ul">
+          <li class="list_head">
+        2019-2020
+          <span class="kind">  Développeuse Full Stack - Stage 6 mois</span>
+          <span class="where">   Adrenalead à Lyon </span>
+          <div class="what">     Au sein de cette startup dans le webmarketing : ajout de nouvelles features, création d’outil de statistique, maintenance, devOps, front-end, back-end,… Stage très complet avec une équipe géniale. (PHP, JS, HTML/CSS, Angular, Mysql, ElasticSearch, docker, nodeJS…).</div>
+          </li>
+        </ul>
+        <ul class="fa-ul">
+          <li class="list_head">
+        2017
+          <span class="kind">  Développeuse AngularJS - Stage 3 mois</span>
+          <span class="where">   Astrée Software à Saint-Etienne </span>
+          <div class="what">     Création d'un audit trail générique, performer, améliorer et débugger la solution logicielle existante (java, javascript et AngularJS + tâches matérielles).</div>
+          </li>
+        </ul>
+        <ul class="fa-ul">
+          <li class="list_head">
+        2016
+          <span class="kind">  Développeuse Python - Stage 3 mois</span>
+          <span class="where">   Oceasoft, à Montpellier</span>
+          <div class="what">     Création d’un firmware et d’un protocole d’étalonnage pour sonde intelligente entre une Raspberry Pi et un microcontrôleur.</div>
+          </li>
+        </ul>
+        
         <h2>Domaines de Compétences : </h2>
         <ul class="fa-ul">
           <li class="list_head"> <span class="fa-li" ><i class="fas fa-laptop-code"></i></span>Informatique :
@@ -87,7 +96,32 @@
       </div>
 
     </div>
-    </mat-expansion-panel>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel class="contain" id="top" [expanded]="true">
+    <mat-expansion-panel-header>
+    <mat-panel-description>
+        Timeline
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <div class="contain">
+      <h1 class="titre">Timeline</h1>
+      <mat-radio-group aria-labelledby="label_tri" class="col-md-9"  (change)="selectionChanged($event)" formControlName="tri" value="all">
+        
+        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="perso">Perso et projets</mat-radio-button>
+        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="exp">Experiences</mat-radio-button>
+        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="sco">Scolaire</mat-radio-button>
+        <mat-radio-button class="_tri col-lg-3 col-md-3 col-sm-3" value="all">Tous</mat-radio-button>
+      </mat-radio-group>
+      <div [ngClass]="exp.type" class="time col-lg-6 col-md-6 col-sm-12" *ngFor="let exp of experiences">
+        <p class="titre2">{{exp.titre}}</p>
+        <p class="annee detail">{{exp.annee}}</p>
+        <p class="detail">{{exp.lieu}}</p>
+        <p class="decription detail">{{exp.decription}}</p>
+      </div>
+    </div>
+  </mat-expansion-panel>
   
 
 </mat-accordion>

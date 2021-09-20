@@ -9,14 +9,21 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 export class ParcoursComponent implements OnInit {
   
   experiences = [
+    // {
+    //   type       : 'exp',
+    //   titre      : 'Mission Freelance',
+    //   annee      : 'Janvier - Février 2021',
+    //   lieu       : 'Saint-Etienne',
+    //   decription : "Mise à niveau des outils informatiques d’une association. Upgrade hardware des postes fixes (ajout de RAM), puis installation de nouveaux logiciels, \
+    //                 et création d’une VM afin d'assurer en douceur le passage et le suivi sans arrêter les activités de l’association. \
+    //                 Et enfin, formation des personnes concernées sur le nouveau logiciel (ACCESS)."
+    // },
     {
       type       : 'exp',
       titre      : 'Mission Freelance',
-      annee      : 'Janvier - Février 2021',
-      lieu       : 'Saint-Etienne',
-      decription : "Mise à niveau des outils informatiques d’une association. Upgrade hardware des postes fixes (ajout de RAM), puis installation de nouveaux logiciels, \
-                    et création d’une VM afin d'assurer en douceur le passage et le suivi sans arrêter les activités de l’association. \
-                    Et enfin, formation des personnes concernées sur le nouveau logiciel (ACCESS)."
+      annee      : 'Depuis 2020',
+      lieu       : 'Région Rhône-Alpes',
+      decription : "Missions dans différents domaines (cours, hardware, Full Stack, VM)"
     },
     {
       type       : 'perso',
@@ -25,16 +32,16 @@ export class ParcoursComponent implements OnInit {
       lieu       : 'Lyon',
       decription : "Le rôle des tuteurs référents est de gérer l'organisation des tuteurs et de recruter les nouveaux afin de les former. "
     },
-    {
-      type       : 'exp',
-      titre      : 'Mission Freelance',
-      annee      : 'Novembre - decembre 2020',
-      lieu       : 'Lyon',
-      decription : "Développement d’une application desktop qui permet à l'utilisateur de se connecter avec un compte déjà existant sur le site du client, \
-                    puis de gérer ses informations personelles, son pseudo sur le jeu League of Legends, puis d'enregistrer, automatiquement ou non, les parties jouées,\
-                    de les gérer, et de les sauvegarder sur le cdn du client si l’utilisateur le souhaite. \
-                    Langages utilisés : App en électron, JS / Python, API (client et RiotGames), HTLM/CSS, Pascal (innoSetup Config)"
-    },
+    // {
+    //   type       : 'exp',
+    //   titre      : 'Mission Freelance',
+    //   annee      : 'Novembre - decembre 2020',
+    //   lieu       : 'Lyon',
+    //   decription : "Développement d’une application desktop qui permet à l'utilisateur de se connecter avec un compte déjà existant sur le site du client, \
+    //                 puis de gérer ses informations personelles, son pseudo sur le jeu League of Legends, puis d'enregistrer, automatiquement ou non, les parties jouées,\
+    //                 de les gérer, et de les sauvegarder sur le cdn du client si l’utilisateur le souhaite. \
+    //                 Langages utilisés : App en électron, JS / Python, API (client et RiotGames), HTLM/CSS, Pascal (innoSetup Config)"
+    // },
     {
       type       : 'perso',
       titre      : 'Trésorière adjointe de la GameDevParty',
@@ -155,11 +162,13 @@ export class ParcoursComponent implements OnInit {
 
   mini_list = [
 
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/Csharp.png'), name: 'Lang. C#'},
+
+    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/angular.png'), name: 'Web angular'},
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/CSS3.png'), name: 'Web CSS3'},
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/PHP-Logo.png'), name: 'Web PHP'},
-    {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/angular.png'), name: 'Web angular'},
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/nodejs.png'), name: 'Web NodeJS'},
-
+    
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/mongo.png'), name: 'BDD MongoDB'},
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/mysql.png'), name: 'BDD My sql'},
     {src: this.sanitization.bypassSecurityTrustUrl('assets/logos/postgresql-logo.png'), name: 'BDD postgreSql'},
@@ -183,17 +192,17 @@ export class ParcoursComponent implements OnInit {
   ]
   skills = [
 
-    {name: 'CSS3', note:'80'},
+    {name: 'CSS3', note:'70'},
     {name: 'PHP', note:'70'},
-    {name: 'angular', note:'78'},
+    {name: 'angular', note:'80'},
     {name: 'NodeJS', note:'82'},
     {name: 'MongoDB', note:'65'},
     {name: 'My sql', note:'80'},
     //{name: 'postgreSql', note:'50'},
     {name: 'JAVA', note:'70'},
     {name: 'JavaScript', note:'80'},
-    {name: 'Unity3D -- UnityScript', note:'80'},
-    {name: 'Python', note:'75'},
+    {name: 'Unity3D -- C#', note:'90'},
+    {name: 'Python', note:'85'},
     {name: 'C/C++', note:'75'},
     
     // {name: 'Visual Studio'},
