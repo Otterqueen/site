@@ -138,6 +138,26 @@ export class ProjectsComponent implements OnInit {
 
   projets_ecole = [
     {
+      duree      : '1 mois',
+      group_bool : 'group',
+      titre      : 'XV',
+      note       : '124',
+      lang       : 'Unity3D, C#',
+      decription : "Ce projet a pour but de vous faire développer une interface graphique sous Unity\
+                     à des fin d'optimisation de processus industriels. Mise en place d'un systeme de sauvegarde \
+                     (online et locale), deplacement camera, bdd, ... en somme : les sims passion industrie."
+    },
+    {
+      duree      : '1 mois',
+      group_bool : 'no-group',
+      titre      : 'in-the-shadows',
+      note       : '125',
+      lang       : 'Unity3D, C#',
+      decription : "Ce projet a pour but de vous faire développer un jeu complet nécessitant un peu d'algo et \
+                    beaucoup de créativité. Shadowmatics like, ce jeu comporte des niveaux de difficulté croissante \
+                    et un niveau caché ainsi qu'un mode de test."
+    },
+    {
       duree      : '1 semaine',
       group_bool : 'no-group',
       titre      : 'Dr-Quine',

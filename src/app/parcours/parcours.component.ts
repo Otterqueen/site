@@ -20,15 +20,24 @@ export class ParcoursComponent implements OnInit {
     // },
     {
       type       : 'exp',
+      titre      : 'Alternance',
+      annee      : '2021-2022',
+      lieu       : 'ENE à Lyon',
+      decription : "Développement d'un simulateur d'atelier industriel, dans le cadre du consortium EthicFactory. \
+                    Seule développeuse sur le projet, de la conception du cachier des charges à la livraison du logiciel \
+                    Techologies utilisées : Python, MQTT, PygameGUI."
+    },
+    {
+      type       : 'exp',
       titre      : 'Mission Freelance',
       annee      : 'Depuis 2020',
       lieu       : 'Région Rhône-Alpes',
-      decription : "Missions dans différents domaines (cours, hardware, Full Stack, VM)"
+      decription : "Missions dans différents domaines (cours, hardware, Full Stack, VM)."
     },
     {
       type       : 'perso',
       titre      : 'Tutrice référente',
-      annee      : 'Février 2021 - aujourd\'hui',
+      annee      : 'Février 2021 - 2022',
       lieu       : 'Lyon',
       decription : "Le rôle des tuteurs référents est de gérer l'organisation des tuteurs et de recruter les nouveaux afin de les former. "
     },
