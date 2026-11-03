@@ -10,7 +10,7 @@ export class ProjectsComponent implements OnInit {
   projets = [
     {
       type       : 'video',
-      src        : 'https://www.youtube.com/embed/9cey6-75uwg',
+      src        : 'https://www.youtube.com/embed/tj0HlB2dqIM?si=4mE50H4yZjxCWkgd',
       titre      : 'Fall Girl',
       hash       : 'G4G',
       annee      : '2020',

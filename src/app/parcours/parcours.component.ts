@@ -9,13 +9,43 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 export class ParcoursComponent implements OnInit {
   
   experiences = [
+    {
+      type       : 'exp',
+      titre      : 'CDI',
+      annee      : 'Juillet 2026 - octobre 2026',
+      lieu       : 'Ovide à Lyon',
+      decription : "Développement et re-factorisation de projets, ajout de nouveaux modules,... Python, JS, Redis, Docker."
+    },
+    {
+      type       : 'exp',
+      titre      : 'CDI',
+      annee      : 'Mars 2023 - Juillet 2026',
+      lieu       : 'Hardis à Lyon',
+      decription : "Développeuse FullStack : Développement sur différents projets internes et externes. Java, \
+                    SpringBoot, Python, IA Gen, Azure, ... "
+    },
+    {
+      type       : 'perso',
+      titre      : 'Présidente du Spéléo Club des Oreillards',
+      annee      : 'Janvier 2023 - aujourd\'hui',
+      lieu       : 'Saint-Chamond',
+      decription : "Club famillial de spéléologie et de canyoning. Organisation d'événements, gestion du matériel, des finances et des adhérents."
+    },
+   {
+      type       : 'exp',
+      titre      : 'CDD',
+      annee      : 'Décembre 2022',
+      lieu       : 'ENE à Lyon',
+      decription : "Dossier de conception et d'implémentation d'un simulateur d'atelier industriel, dans le cadre du consortium EthicFactory. \
+                    Puis création de cycles et formation de collègues sur MAKE (Integromat)."
+    },
     // {
     //   type       : 'exp',
     //   titre      : 'Mission Freelance',
     //   annee      : 'Janvier - Février 2021',
     //   lieu       : 'Saint-Etienne',
-    //   decription : "Mise à niveau des outils informatiques d’une association. Upgrade hardware des postes fixes (ajout de RAM), puis installation de nouveaux logiciels, \
-    //                 et création d’une VM afin d'assurer en douceur le passage et le suivi sans arrêter les activités de l’association. \
+    //   decription : "Mise à niveau des outils informatiques d'une association. Upgrade hardware des postes fixes (ajout de RAM), puis installation de nouveaux logiciels, \
+    //                 et création d'une VM afin d'assurer en douceur le passage et le suivi sans arrêter les activités de l'association. \
     //                 Et enfin, formation des personnes concernées sur le nouveau logiciel (ACCESS)."
     // },
     {
